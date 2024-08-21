@@ -1,3 +1,4 @@
+@SellerTest
 Feature: Create a new expense product
 
   Scenario: Successfully create a new expense product and verify status code 201

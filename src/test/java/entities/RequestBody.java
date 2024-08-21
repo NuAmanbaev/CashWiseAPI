@@ -36,10 +36,7 @@ public class RequestBody {
     private String do_remind_every_month;
 
     //create Client
-    private String company_name;
     private String client_name;
-    private String phone_number;
-    private String address;
     private int[] tags_id;
 
 
