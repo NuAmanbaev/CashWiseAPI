@@ -16,8 +16,7 @@ public class RequestBody {
     private boolean flag;
 
 
-
-  //  create product
+    //  create product
     private String product_title;
     private Integer product_price;
     private Integer service_type_id;
@@ -29,9 +28,22 @@ public class RequestBody {
 
 
 
+    
 
 
+    public void setEmail ( String email ) {
+        this.email = email;
+    }
 
+    public String getEmail () {
+        return email;
+    }
 
+    public void setPassword ( String password ) {
+        this.password = password;
+    }
 
+    public String getPassword () {
+        return password;
+    }
 }
