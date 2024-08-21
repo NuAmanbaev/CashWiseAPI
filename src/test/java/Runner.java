@@ -7,10 +7,15 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
         features = "C:\\Users\\j_dan\\OneDrive\\Desktop\\CashWiseAPI\\src\\test\\resources\\features\\CreateInvalidSeller.feature",
         glue = "api",
-        tags = "",
+        tags = "@SellerTest",
         dryRun = false
 )
-
-
-public class CucumberRunner {
+public class Runner {
 }
+
+
+
+
+
+
+
