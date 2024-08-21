@@ -1,6 +1,9 @@
 package entities;
 
 import lombok.Data;
+
+import java.util.List;
+
 @Data
 public class RequestBody {
 
@@ -8,6 +11,11 @@ public class RequestBody {
     private String description;
     private String email;
     private String password;
+    private String company_name;
+    private String seller_name;
+    private String phone_number;
+    private String address;
+    List<CustomResponse> responses;
 
     //create category
 
