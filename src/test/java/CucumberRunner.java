@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
         features = "/src/test/resources/features",
         glue = "step_definitions",
-        tags = "@creatProduct",
-        dryRun = false
+        tags = "@createClient",
+        dryRun = true
 )
 
 
