@@ -35,6 +35,10 @@ public class RequestBody {
     private Integer remind_before_day;
     private String do_remind_every_month;
 
+    //create Client
+    private String client_name;
+    private int[] tags_id;
+
 
 
 

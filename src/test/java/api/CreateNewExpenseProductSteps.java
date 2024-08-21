@@ -1,4 +1,4 @@
-package step_definitions;
+package api;
 
 import com.github.javafaker.Faker;
 import entities.RequestBody;
