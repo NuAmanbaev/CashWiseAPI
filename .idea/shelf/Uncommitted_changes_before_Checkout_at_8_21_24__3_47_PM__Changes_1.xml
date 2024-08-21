@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_8_21_24,_3_47_PM_[Changes]1" date="1724273331355" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_21_24,_3_47_PM_[Changes]1/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 8/21/24, 3:47 PM [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" value="target/test-classes/step_definition/CreateClient.class" />
-    <option name="AFTER_PATH" value="target/test-classes/step_definition/CreateClient.class" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_21_24,_3_47_PM_[Changes]1/CreateClient.class" />
-  </binary>
-</changelist>
