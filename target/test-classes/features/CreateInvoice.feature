@@ -1,41 +1,31 @@
-Feature: creates a invoice
+Feature: Create invoice
 
   Background:
-    Given base url "https://backend.cashwise.us/api/myaccount"
-@Invoice
-  Scenario: user successfully creates a product
-    And I have valid token
-    And I have the endpoint "/invoices"
-    And I have "invoice_title" with "Invoices" in request body
-    And I have "client_id" with "2" in request body
-    And I have "date_of_creation" with "2024-06-03" in request body
-    And I have "end_date" with "2024-07-03" in request body
-    And I have "products" with product
-    And I have "sum" with "15.99" in request body
-    And I have "discount" with "0" in request body
-    And I have "sum_of_discount" with "0" in request body
-    When I send POST request
-    Then verify status code is 201
-    And verify I have "invoice_title" with "Invoices" in response body
+    Given our base url "https://backend.cashwise.us/api/myaccount"
 
-  @updateInvoice
-  Scenario: Verify user can update invoice
-    And I have access
-    And I have the endpoint "/invoices"
-    And I have "invoice_title" with "company invoice" in request body
-    And I have "client_id" with "25" in request body
-    And I have "date_of_creation" with "2024-06-03" in request body
-    And I have "end_date" with "2024-06-29" in request body
-    And I have "products" with product
-    And I have "sum" with "15155" in request body
-    And I have "discount" with "0" in request body
-    And I have "sum_of_discount" with "15125" in request body
-    When I send a POST request
-    And I retrieve id for "invoice_id"
-    Then verify status code is 201
-    And I have "date_of_creation" with "2024-06-04" in request body
-    And I have "end_date" with "2024-07-04" in request body
-    And I have "invoice_title" with "Coffee Invoice" in request body
-    And I have "products" with product
-    When I send PUT request
-    Then verify status code is 200
+
+  @invoice
+
+  Scenario: user successfully creates invoice
+
+    And I got access
+    And I got the endpoint "/invoices"
+    And I got "invoice_title" with "Auto" in request body
+    And I got "client_id" with "1" in request body
+    And I got "date_of_creation" with "2024-07-09" in request body
+    And I got "end_date" with "2024-07-11" in request body
+    And I got "description" with "Get badass wheels for your vehicle" in request body
+    And I got "product_title" with "Auto" in request body
+    And I got "product_id" with "1" in request body
+    And I got "product_price" with "180" in request body
+    And I got "service_type_id" with "2" in request body
+    And I got "category_id" with "1" in request body
+    And I got "product_description" with "Auto" in request body
+    And I got "sum" with "100" in request body
+    And I got "discount" with "1" in request body
+    And I got "invoice_title" with "Auto" in request body
+    And I got "sum_of_discount" with "1" in request body
+    When I will send post request
+    Then Verify status code equals 201
+    And Validate I got "invoice_title" with "Auto" in request body
+    Then I remove the invoice

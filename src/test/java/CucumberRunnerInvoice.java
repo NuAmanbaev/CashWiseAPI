@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@Invoice",
+        tags = "@invoice",
         dryRun = true
 )
 
 
-public class CucumberRunner {
+public class CucumberRunnerInvoice {
 }
