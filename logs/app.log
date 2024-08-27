@@ -1,0 +1,11 @@
+2024-08-26 19:31:11 INFO  CreateNewExpenseProductSteps:33 - Token and base URL have been initialized
+2024-08-26 19:31:12 INFO  CreateNewExpenseProductSteps:42 - The valid token has been provided
+2024-08-26 19:31:12 INFO  CreateNewExpenseProductSteps:50 - User name provided with numbers 
+2024-08-26 19:31:12 INFO  CreateNewExpenseProductSteps:59 - Description was filled out
+2024-08-26 19:31:13 INFO  CreateNewExpenseProductSteps:77 - Sent POST request to create the category. Response status code: 404
+2024-08-26 19:42:38 INFO  CreateNewExpenseProductSteps:33 - Token and base URL have been initialized
+2024-08-26 19:42:40 INFO  CreateNewExpenseProductSteps:42 - The valid token has been provided
+2024-08-26 19:42:40 INFO  CreateNewExpenseProductSteps:50 - User name provided with numbers 
+2024-08-26 19:42:40 INFO  CreateNewExpenseProductSteps:59 - Description was filled out
+2024-08-26 19:42:41 INFO  CreateNewExpenseProductSteps:77 - Sent POST request to create the category. Response status code: 404
+2024-08-26 19:42:41 INFO  CreateNewExpenseProductSteps:87 - I am expecting the code 404
