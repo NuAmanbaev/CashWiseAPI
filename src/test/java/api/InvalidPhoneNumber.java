@@ -17,10 +17,15 @@ public class InvalidPhoneNumber {
     RequestSpecification request;
     RequestBody customRequest = new RequestBody();
     CustomResponse customResponse = new CustomResponse();
+
+
     @Given("base url {string}")
     public void base_url(String url) {
-        request = RestAssured.given().contentType(ContentType.JSON)
-                .accept(ContentType.JSON).baseUri(url);
+        request = RestAssured
+                .given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .baseUri(url);
     }
     @When("I provide  authorization token")
     public void i_provide_authorization_token() {
